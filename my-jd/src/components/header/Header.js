@@ -26,29 +26,24 @@ export default function Header() {
     }, []);
 
     return (
-        <div className="header">
+        <div id="header">
             <Swiper
-                // className="swiper-container"
-                modules={[Autoplay]}
-            // spaceBetween={50}
-            // slidesPerView={3}
-            // navigation
-            // pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log('slide change')}
+                loop={true}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
+                pagination={true}
+                modules={[Autoplay, Pagination]}
+
             >
                 {imgUrls.map(imgUrl => {
                     return (
                         <SwiperSlide
                             key={imgUrl}
-                        // className="swiper-slide"
-                        // style={{ 'background-color': 'green', }}
                         >
                             <img
-                                // className="img"
                                 src={imgUrl}
-                                style={{ height: '100%' }}
                                 alt="" />
                         </SwiperSlide>
                     );

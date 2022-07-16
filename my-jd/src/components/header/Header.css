@@ -1,13 +1,23 @@
+#header .swiper-pagination-horizontal {
+    right: 10px;
+    left: auto;
+    width: auto;
+}
+
 #header .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    opacity: 1;
+    /* background-color: green;
+    opacity: 1; */
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid blue;
+    background-color: green;
+    opacity: 1; */
 }
 
 #header .swiper-pagination-bullet-active {
-    background-color: #fff;
+    /* background-color: red; */
+    /* border: 1px solid white; */
+    background-color: white;
 }
 
 .img {

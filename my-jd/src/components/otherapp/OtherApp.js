@@ -18,10 +18,12 @@ export default function OtherApp() {
                 {apps.map(app => {
                     return (
                         <li key={app.icon}>
-                            <div className="app_icon">
-                                <img src={app.icon} alt="" />
-                            </div>
-                            <span>{app.title}</span>
+                            <a href={app.url}>
+                                <div className="app_icon">
+                                    <img src={app.icon} alt="" />
+                                </div>
+                                <span>{app.title}</span>
+                            </a>
                         </li>
                     );
                 })}
